@@ -1,0 +1,729 @@
+@import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&family=Poppins:ital,wght@0,300;1,400;1,600&family=Ubuntu:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: black;
+}
+/* .scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background:rgba(30, 16, 94, 0.863);
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 45px;
+    color: white;
+    z-index: 9999;
+    opacity: 0;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity:1;
+    pointer-events: auto;
+} */
+.navbar{
+   
+    width: 100%;
+    background-color: rgba(30, 16, 94);
+    font-family: 'Ubuntu',sans-serif;
+    z-index: 999;
+    padding: 15px 0;
+    
+}
+.navbar .menu li a{
+    color:white;
+
+}
+.navbar .max-width{
+    display: flex;
+   align-items: center;
+   justify-content: space-between; 
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin:auto;
+}
+.navbar .logo a{
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+}
+.navbar .menu li {
+ list-style: none;
+ display: inline-block;
+
+}
+.navbar .menu li a{
+    color:white;
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 25px;
+
+}
+/* .navbar .menu li a:hover{
+    color:rgb(0, 0, 0) ;
+   
+} */
+/* .navbar .menu li a:active{
+    color:black ;
+    background: black;
+   
+} */
+/* .menu-butt{
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+    display: none;
+} */
+.home{
+    display: flex;
+    background: url("../img/emile-perron-xrVDYZRGdw4-unsplash.jpg") no-repeat center;
+    
+    /* max-width: 100%; */
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Ubuntu',sans-serif;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 28px;
+  
+
+
+}
+.home .home-content .text-2{
+    font-size: 70px;
+    font-weight: 600;
+    margin-left: -3px;
+    color:rgba(30, 16, 94, 0.733) ;
+
+}
+.home .home-content .text-3{
+    font-size: 40px;
+  margin: 5px 0;
+
+}
+.home .home-content .text-3 span{
+    color:rgba(30, 16, 94, 0.733) ;
+    font-weight: 600;
+
+}
+
+
+section{
+    padding: 80px 0px;
+}
+.about , .contact{
+    font-family: 'Poppins',sans-serif;
+}
+.about .title{
+    font-family: 'Ubuntu',sans-serif;
+    text-align: center;
+    font-size: 40px;
+
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+    font-weight: 700;
+}
+.about .title::before{
+    content:"";
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    background: black;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    
+}
+.about .title::after{
+    content:"INTRO";
+    position: absolute;
+    
+    color: rgba(30, 16, 94, 0.733) ;
+    background: rgb(220, 222, 230);
+    left: 50%;
+    bottom: -15px;
+    padding: 5px;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: 600;
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .column-left {
+   width: 45%;
+}
+.about .about-content .column-left img{
+    height: 500px;
+    width: 400px;
+    object-fit: cover;
+    border-radius:10px;
+}
+.about .about-content .column-right {
+    width: 55%;
+ }
+ .about .about-content .column-right .text {
+   font-weight: 600;
+   font-size: 20px;
+   margin-bottom: 10px;
+ }
+ .about .about-content .column-right .text p{
+     font-size: 30px;
+  
+  }
+  .about .about-content .column-right .text a:hover{
+   color: red;
+ 
+ }
+  
+
+  .about .about-content .column-right .text p span{
+    font-size: 50px;
+    color:  rgba(30, 16, 94, 0.733) ;
+ 
+ }
+
+
+
+ section{
+    padding: 80px 0px;
+}
+.skills{
+    font-family: 'Poppins',sans-serif;
+}
+.skills .title{
+    font-family: 'Ubuntu',sans-serif;
+    text-align: center;
+    font-size: 40px;
+
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+    font-weight: 700;
+}
+.skills .title::before{
+    content:"";
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    background: black;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    
+}
+.skills .title::after{
+    content:"NOOB";
+    position: absolute;
+    
+    color: rgba(30, 16, 94, 0.733) ;
+    background: rgb(220, 222, 230);
+    left: 50%;
+    bottom: -15px;
+    padding: 5px;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: 600;
+}
+.skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: space-between;
+}
+.skills .skills-content .left .text {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+  
+}
+.skills .skills-content .right {
+width: 100%;
+  
+}
+.skills .skills-content .right .bars {
+ margin-bottom: 12px;
+ font-size: 20px;
+  
+}
+.skills .skills-content .right .info {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+     
+   }
+   .skills .skills-content .right .line{
+       height: 10px;
+       width: 100%;
+       background:lightgrey ;
+       position: relative;
+   }
+   .skills .skills-content .right .line::before{
+ content: "";
+ position: absolute;
+ height: 100%;
+ left:0;
+ top: 0;
+ background:rgba(30, 16, 94, 0.733) ;
+ animation-name: sample;
+ animation-duration: 3s;
+ animation-iteration-count: infinite;
+ animation-direction: alternate;
+ animation-timing-function:ease;
+}
+ .skills .skills-content .right .html::before{
+    width: 70%;
+} 
+.skills .skills-content .right .css::before{
+    width: 60%;
+
+}
+.skills .skills-content .right .cpro::before{
+    width: 70%;
+}
+.skills .skills-content .right .cpp::before{
+    width: 60%;
+}
+.skills .skills-content .right .js::before{
+    width: 60%;
+} 
+@keyframes sample{
+    0%{background:lightgrey;}
+    70%{background:rgba(30, 16, 94, 0.733)}
+}
+
+
+
+
+section{
+    padding: 80px 0px;
+    background:rgb(220, 222, 230);
+}
+.gallery{
+    font-family: 'Poppins',sans-serif;
+}
+.gallery .title{
+    font-family: 'Ubuntu',sans-serif;
+    text-align: center;
+    font-size: 40px;
+
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+    font-weight: 700;
+}
+.gallery .title::before{
+    content:"";
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    background: black;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    
+}
+.gallery .title::after{
+    content:"Images";
+    position: absolute;
+    
+    color: rgba(30, 16, 94, 0.733) ;
+    background: rgb(220, 222, 230);
+    left: 50%;
+    bottom: -15px;
+    padding: 5px;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: 600;
+}
+.gallery .galpac{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.gallery .galsec{
+    border: 1px solid rgba(30, 16, 94, 0.733);
+    width: 550px;
+    height: 600px;
+    margin-left: 50px;
+    padding:10px;
+    background: rgba(30, 16, 94, 0.733);
+    border-radius: 20px;
+    box-shadow: 7px 8px  black;
+}
+.gallery .galsec img{
+    width: 400px;
+    height: 560px;
+    margin: 6px;
+    border-radius: 20px;
+}
+.gallery .galpac .a{
+    padding: 200px;
+}
+.gallery .galpac .a .next{
+   width: 100px;
+   height: 50px;
+   background:rgba(30, 16, 94, 0.733) ;
+   color:rgb(245, 242, 242) ;
+   font-size: 20px;
+   font-family: 'Poppins',sans-serif;
+   border-radius: 10px;
+   border: 2px solid rgba(30, 16, 94, 0.733) ;
+   box-shadow: 6px 7px  rgba(30, 16, 94, 0.500) ;
+}
+.gallery .galpac .a .prev{
+    width: 100px;
+    height: 50px;
+    background:rgba(30, 16, 94, 0.733) ;
+    color:rgb(245, 242, 242) ;
+    font-size: 20px;
+    font-family: 'Poppins',sans-serif;
+    border-radius: 10px;
+    border: 2px solid rgba(30, 16, 94, 0.733) ;
+    box-shadow: -6px 7px  rgba(30, 16, 94, 0.500) ;
+ }
+ .gallery .galpac .a .prev:hover{
+color:rgba(30, 16, 94, 0.733)  ;
+background: white;
+ }
+ .gallery .galpac .a .next:hover{
+    color:rgba(30, 16, 94, 0.733)  ;
+    background: white;
+     }
+
+
+
+
+
+
+     .contact{
+        font-family: 'Poppins',sans-serif;
+    }
+    .contact .title{
+        font-family: 'Ubuntu',sans-serif;
+        text-align: center;
+        font-size: 40px;
+    
+        margin-bottom: 60px;
+        padding-bottom: 20px;
+        position: relative;
+        font-weight: 700;
+    }
+    .contact .title::before{
+        content:"";
+        position: absolute;
+        width: 180px;
+        height: 3px;
+        background: black;
+        left: 50%;
+        bottom: 0px;
+        transform: translateX(-50%);
+        
+    }
+    .contact .title::after{
+        content:"get in touch";
+        position: absolute;
+        
+        color: rgba(30, 16, 94, 0.733) ;
+        background: rgb(220, 222, 230);
+        left: 50%;
+        bottom: -15px;
+        padding: 5px;
+        transform: translateX(-50%);
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .contact .contact-content{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .contact .contact-content .column{
+        width: cal(50%-30px);
+    }
+    .contact .contact-content .text{
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .contact .contact-content .left p{
+        text-align: justify;
+
+    }
+    .contact .contact-content .left .icons{
+       margin: 10px 0;
+
+       padding-left:300px;
+       border: 2px solid rgba(30, 16, 94, 0.733) ;
+       border-radius: 5px;
+       background: rgba(4, 1, 17, 0.503) ;
+       width: 540px;
+
+    }
+    .contact .contact-content .row{
+        display: flex;
+        height: 65px;
+        align-items: center;
+        border: 2px solid rgba(30, 16, 94, 0.733);
+        padding: 10px;
+        margin:5px;
+        width: 600px;
+        border-radius: 5px;
+        background: white;
+    }
+    .contact .contact-content .row:hover{
+      color: white;
+      background:rgba(30, 16, 94, 0.733);
+    }
+    .contact .contact-content .row .info{
+        margin-left: 30px;
+    }
+    .contact .contact-content .row.i{
+      font-size: 25px;
+      color: rgba(30, 16, 94, 0.733);
+    }
+    
+
+
+
+
+
+    .achieve{
+        font-family: 'Poppins',sans-serif;
+    }
+    .achieve .title{
+        font-family: 'Ubuntu',sans-serif;
+        text-align: center;
+        font-size: 40px;
+    
+        margin-bottom: 60px;
+        padding-bottom: 20px;
+        position: relative;
+        font-weight: 700;
+    }
+    .achieve .title::before{
+        content:"";
+        position: absolute;
+        width: 180px;
+        height: 3px;
+        background: black;
+        left: 50%;
+        bottom: 0px;
+        transform: translateX(-50%);
+        
+    }
+    .achieve .title::after{
+        content:"";
+        position: absolute;
+        
+        color: rgba(30, 16, 94, 0.733) ;
+        background: rgb(220, 222, 230);
+        left: 50%;
+        bottom: -15px;
+        padding: 5px;
+        transform: translateX(-50%);
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .achieve .achieve-content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .achieve .achieve-content .column{
+        width: calc(50%-30px);
+
+    }
+    .achieve .achieve-content .edu{
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: 200px;
+        width: 600px;
+        padding: 20px;
+        
+        background: rgb(118, 126, 160);
+        color: white;
+        border: 1px solid;
+        border-radius: 30px;
+
+    }
+    .achieve .achieve-content .achi{
+        font-size: 20px;
+        font-weight: 600;
+        margin-right: 200px;
+        width: 600px;
+        padding: 20px;
+        
+        background: rgb(118, 126, 160);
+        color: white;
+        border: 1px solid;
+        border-radius: 30px;
+
+    }
+    .achieve .achieve-content .achi th,td{
+      
+      padding: 15px;
+      width: 100%;
+      margin: 20px;
+      text-align: left;
+
+    }
+    .achieve .achieve-content .achi  tr:nth-child(even) {background-color: #443e74;}
+    .achieve .achieve-content .achi tr:nth-child(odd) {background-color: #33323f;}
+    .achieve .achieve-content .achi tr:hover {background-color: #171e30;}
+    .achieve .achieve-content .edu .achi span{
+        color: black;
+        font-weight: 600;
+    }
+    .achieve .achieve-content .achi span{
+        color: black;
+        font-size: 25px;
+        font-weight: 1000;
+    }
+    .achieve .achieve-content .edu a{
+        color: black;
+    }
+    .achieve .achieve-content .edu a:hover{
+        color: rgb(92, 28, 81);
+    }
+    .contact .achieve-content .left p{
+        text-align: justify;
+
+    }
+
+
+    .footer {
+       font-family: 'Ubnuntu',sans-serif;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        background-color:rgba(30, 16, 94, 0.563);
+        color: white;
+        text-align: right;
+        padding-right: 100px;
+      }
+      .form
+      {
+          border: 1px solid black;
+          width:100%;
+          margin:50px;
+        background:rgba(30, 16, 94, 0.563) ;
+        color:white;
+        padding:10px;
+        border-radius: 3px;
+        font-size:20px;
+        
+      }
+      .form span{
+          color:black;
+          font-size:25px;
+      }
+      .form a:hover{
+        color:rgb(245, 241, 241) ;
+       
+    }
+
+    .fill{
+       padding-top: 100px;
+        display: flex;
+        font-size: 20px;
+        color: rgba(30, 16, 94, 0.963);
+        font-weight: 600;
+        
+    }
+    .feedback{
+        margin-top: 50px;
+        padding: 10px;
+        min-height: 200px;
+    }
+    #feed{
+        width: 100%;
+        padding-left: 150px;
+    }
+    #feed th,tr{
+        border: 1px solid black;
+        padding: 2px;
+        background:rgba(30, 16, 94, 0.263) ;
+        font-size: 20px;
+        font-weight: 600;
+   
+    }
+    #level{
+        width: 200px;
+        background: rgba(30, 16, 94, 0.963);
+        color: white;
+        padding: 5px;
+        
+    }
+    #newadd{
+        width: 100px;
+        background: rgba(30, 16, 94, 0.963);
+        color: white;
+        padding: 5px;
+    }
+    #InsertHere{
+        font-size: 25px;
+        color: black;
+    }
+
+    .fab{
+        padding-right: 10px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+      }
+      
+      /* Add a hover effect if you want */
+      .fab:hover {
+        opacity: 0.7;
+        color: white;
+      }
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .exter{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+      }
+      .college{
+          width: 400px;
+          height: 400px;
+          margin: 10px;
+      }
+
+
+
+
+
+
+
+   
